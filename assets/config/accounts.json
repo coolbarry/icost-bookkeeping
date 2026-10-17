@@ -1,0 +1,86 @@
+{
+  "日常消费账户": {
+    "note": "示例分组，按需增删",
+    "accounts": [
+      {
+        "name": "「消费」微信",
+        "type": "微信钱包",
+        "bal": 0,
+        "hist": 0,
+        "main": true
+      },
+      {
+        "name": "「消费」支付宝",
+        "type": "支付宝",
+        "bal": 0,
+        "hist": 0,
+        "main": true
+      },
+      {
+        "name": "「消费」储蓄卡",
+        "type": "储蓄卡",
+        "bal": 0,
+        "hist": 0,
+        "main": true
+      },
+      {
+        "name": "「消费」信用卡",
+        "type": "信用卡",
+        "bal": 0,
+        "credit": 0,
+        "hist": 0,
+        "main": true
+      }
+    ]
+  },
+  "工资账户": {
+    "note": "示例分组",
+    "accounts": [
+      {
+        "name": "「工资」工资卡",
+        "type": "工资卡",
+        "bal": 0,
+        "hist": 0,
+        "main": true
+      }
+    ]
+  },
+  "储蓄理财账户": {
+    "note": "示例分组",
+    "accounts": [
+      {
+        "name": "「应急」备用金",
+        "type": "储蓄卡",
+        "bal": 0,
+        "hist": 0,
+        "main": true
+      },
+      {
+        "name": "「长期」基金",
+        "type": "基金",
+        "bal": 0,
+        "hist": 0,
+        "main": true
+      }
+    ]
+  },
+  "其他": {
+    "note": "示例分组",
+    "accounts": [
+      {
+        "name": "现金",
+        "type": "现金",
+        "bal": 0,
+        "hist": 0,
+        "main": true
+      },
+      {
+        "name": "「临时」余额宝",
+        "type": "支付宝",
+        "bal": 0,
+        "hist": 0,
+        "main": true
+      }
+    ]
+  }
+}
