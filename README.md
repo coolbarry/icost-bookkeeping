@@ -14,11 +14,40 @@
 - **退款 / 报销单独处理**：这几类 iCost 导入不识别，自动转成「手工补录清单」
 - **逐字段校验**：导入前跑一遍校验报告，把问题拦在导入前
 
+## 安装
+
+### 作为 AI 助手技能（WorkBuddy，推荐）
+
+```bash
+git clone https://github.com/coolbarry/icost-bookkeeping.git ~/.workbuddy/skills/icost-bookkeeping
+```
+
+WorkBuddy 的 skill 就是一个含 `SKILL.md` 的文件夹，clone 到位即生效，**不需要上传任何市场**：
+
+| 安装位置 | 作用范围 |
+|---|---|
+| `~/.workbuddy/skills/icost-bookkeeping/` | 用户级，所有项目可用 |
+| `<某个项目>/.workbuddy/skills/icost-bookkeeping/` | 项目级，仅该项目可用 |
+
+装好后直接对 AI 说「记账」就会触发。
+
+升级（该目录本身是 git 仓库）：
+
+```bash
+git -C ~/.workbuddy/skills/icost-bookkeeping pull
+```
+
+不想用 git 也可以：点仓库页面的 **Code → Download ZIP**，解压后把 `icost-bookkeeping-main` 目录放进上面两个位置之一即可。
+
+### 不用 git、也不用 AI
+
+脚本不依赖任何 AI，只需要 Python 3 + openpyxl。解压后直接按下面「快速开始 → 方式二」跑即可。
+
 ## 快速开始
 
 ### 方式一：作为 AI 助手技能使用（推荐）
 
-把整个目录作为 skill 提供给支持技能的 AI 助手（如 WorkBuddy）。之后直接说「记账」，AI 会按 `SKILL.md` 的流程执行：先铺工作目录 → 体检配置 → 解析账单 → 你在确认页里核对少数待定笔 → 生成导入文件。
+先按上面「安装」把仓库 clone 到 `~/.workbuddy/skills/`。之后直接说「记账」，AI 会按 `SKILL.md` 的流程执行：先铺工作目录 → 体检配置 → 解析账单 → 你在确认页里核对少数待定笔 → 生成导入文件。
 
 ### 方式二：纯命令行使用
 
